@@ -1,7 +1,5 @@
 body {
-	display: flex;
-	border-radius: 50%;
-	transform: translateX(10px);
+	margin: 10px;
 }
 
 .grid-item {
@@ -22,5 +20,9 @@ body {
 }
 
 .grid-one div {
-	lost-column: 1/2;
+	lost-column: 1/4 0;
+}
+
+.grid-one div:nth-child(2) {
+	lost-column: 1/2 0;
 }

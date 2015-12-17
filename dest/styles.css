@@ -1,10 +1,5 @@
 body {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	border-radius: 50%;
-	-webkit-transform: translateX(10px);
-	        transform: translateX(10px);
+	margin: 10px;
 }
 
 .grid-item {
@@ -36,7 +31,7 @@ body {
 }
 
 .grid-one div {
-	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+	width: calc(99.99% * 1/4 - (30px - 30px * 1/4));
 }
 
 .grid-one div:nth-child(n) {
@@ -49,10 +44,32 @@ body {
 	margin-right: 0;
 }
 
-.grid-one div:nth-child(2n) {
+.grid-one div:nth-child(0n) {
 	margin-right: 0;
 }
 
-.grid-one div:nth-child(2n + 1) {
+.grid-one div:nth-child(0n + 1) {
+	clear: left;
+}
+
+.grid-one div:nth-child(2) {
+	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+}
+
+.grid-one div:nth-child(2):nth-child(n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+
+.grid-one div:nth-child(2):last-child {
+	margin-right: 0;
+}
+
+.grid-one div:nth-child(2):nth-child(0n) {
+	margin-right: 0;
+}
+
+.grid-one div:nth-child(2):nth-child(0n + 1) {
 	clear: left;
 }
