@@ -1,0 +1,17 @@
+{
+  "name": "gulp-postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "csswring": "^4.1.1",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Rukin",
+  "license": "ISC"
+}
