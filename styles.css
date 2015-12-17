@@ -1,22 +1,9 @@
-:root {
-	--mainColor: red;
-}
-
-$primary: green;
-
-@define-mixin hello {
-	margin: 0 auto;
-}
-
 body {
 	display: flex;
 	border-radius: 50%;
 	transform: translateX(10px);
-	background: var(--mainColor);
-	h1 {
-		color: $primary;
-	}
-	section {
-		@mixin hello;
-	}
+}
+
+div {
+	lost-column: 1/3;
 }
