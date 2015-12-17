@@ -1,6 +1,10 @@
+:root {
+	--mainColor: red;
+}
+
 body {
 	display: flex;
 	border-radius: 50%;
 	transform: translateX(10px);
-	background: blue;
+	background: var(--mainColor);
 }
