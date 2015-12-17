@@ -6,10 +6,11 @@ var postcss = require('gulp-postcss');
 var gulp = require('gulp');
 var csswring = require('csswring');
 var sass = require('gulp-sass');
+var autoprefixer = require('autoprefixer-core');
 
 gulp.task('styles', function() {
 	var processors = [
-		csswring
+		autoprefixer({browsers:['last 2 version']})
 	];
 
 	return gulp.src('styles.scss')
