@@ -1,6 +1,9 @@
 body {
 	margin: 10px;
+	color: #FFF;
 }
+
+@lost flexbox flex;
 
 .grid-item {
 	background: #2c3e50;
@@ -23,10 +26,6 @@ body {
 	lost-align: center;
 }
 
-.grid-one div p {
-	margin: 0;
-}
-
 @media screen and (min-width: 420px) {
 	.grid-one div {
 		lost-column: 1/2;
@@ -41,17 +40,7 @@ body {
 
 @media screen and (min-width: 1300px) {
 	.grid-one div {
-		lost-column: 1/4 4 50px;
+		lost-column: 1/4 4 30px;
 	}
-}
-
-.grid-two {
-	width: 100%;
-	lost-utility: clearfix;
-	height: 500px;
-}
-
-.grid-two div {
-	lost-row: 1/5;
 }
 
