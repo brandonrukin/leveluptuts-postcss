@@ -112,4 +112,30 @@ body {
 	}
 }
 
+.grid-two {
+	width: 100%;
+	*zoom: 1;
+	height: 500px;
+}
+
+.grid-two:before {
+	content: '';
+	display: table;
+}
+
+.grid-two:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.grid-two div {
+	width: 100%;
+	height: calc(99.99% * 1/5 - (30px - 30px * 1/5));
+	margin-bottom: 30px;
+}
+
+.grid-two div:last-child {
+	margin-bottom: 0;
+}
 
