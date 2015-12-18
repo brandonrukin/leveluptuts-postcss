@@ -15,12 +15,16 @@ body {
 }
 
 .grid-one {
-	width: 100%;
-	lost-utility: clearfix;
+	lost-center: 80% 40px;
 }
 
 .grid-one div {
 	lost-column: 1/1;
+	lost-align: center;
+}
+
+.grid-one div p {
+	margin: 0;
 }
 
 @media screen and (min-width: 420px) {
