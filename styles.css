@@ -50,11 +50,8 @@ body {
 	height: 500px;
 }
 
-.grid-one div:first-child {
-	lost-move: 1/4;
-}
-
-.grid-one div:nth-child(2) {
-	lost-move: -1/4;
+.responsive {
+	font-size: responsive 16px 36px;
+	color: #999;
 }
 

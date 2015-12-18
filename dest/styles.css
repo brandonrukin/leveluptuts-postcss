@@ -130,13 +130,22 @@ body {
 	clear: both;
 }
 
-.grid-one div:first-child {
-	position: relative;
-	left: calc(99.99% * 1/4 - (30px - 30px * 1/4) + 30px);
+.responsive {
+	font-size: calc(16px + 20 * ((100vw - 420px) / 860));
+	color: #999;
 }
 
-.grid-one div:nth-child(2) {
-	position: relative;
-	left: calc(99.99% * -1/4 - (30px - 30px * -1/4) + 30px);
+@media screen and (min-width: 1280px) {
+
+	.responsive {
+		font-size: 36px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	.responsive {
+		font-size: 16px;
+	}
 }
 
