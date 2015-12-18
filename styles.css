@@ -44,3 +44,17 @@ body {
 	}
 }
 
+.grid-two {
+	width: 100%;
+	lost-utility: clearfix;
+	height: 500px;
+}
+
+.grid-one div:first-child {
+	lost-move: 1/4;
+}
+
+.grid-one div:nth-child(2) {
+	lost-move: -1/4;
+}
+

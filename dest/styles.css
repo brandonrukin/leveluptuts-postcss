@@ -113,3 +113,30 @@ body {
 	}
 }
 
+.grid-two {
+	width: 100%;
+	*zoom: 1;
+	height: 500px;
+}
+
+.grid-two:before {
+	content: '';
+	display: table;
+}
+
+.grid-two:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.grid-one div:first-child {
+	position: relative;
+	left: calc(99.99% * 1/4 - (30px - 30px * 1/4) + 30px);
+}
+
+.grid-one div:nth-child(2) {
+	position: relative;
+	left: calc(99.99% * -1/4 - (30px - 30px * -1/4) + 30px);
+}
+
